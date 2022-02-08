@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="BackGround"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/sample/css/style.css"
+            fx:controller="sample.WriteYourNameController"
+            prefHeight="200.0"
+            prefWidth="300.0">
+    <Text fx:id="text"
+          layoutX="10.0"
+          layoutY="50.0"
+          text="Write your name hero"/>
+    <TextField  fx:id="nameField"
+                layoutX="100.0"
+                layoutY="80.0"
+    >
+    </TextField>
+    <Button
+            layoutX="200.0"
+            layoutY="150.0"
+            mnemonicParsing="false"
+            onAction="#windowPassage"
+            text="Confirm"
+    />
+
+</AnchorPane>

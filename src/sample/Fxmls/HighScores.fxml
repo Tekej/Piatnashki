@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="BackGround"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.HighScoresController"
+            stylesheets="/sample/css/style.css"
+            prefHeight="400.0"
+            prefWidth="600.0">
+    <Button
+            layoutX="550.0"
+            layoutY="10.0"
+            mnemonicParsing="false"
+            onAction="#windowPassageMainMenu"
+            text="Back"
+    />
+    <GridPane fx:id="drawPane"
+              prefHeight="350.0"
+              prefWidth="600.0"
+              layoutY="50.0">
+        <TableView fx:id="table"
+                   GridPane.columnIndex="0"
+                   GridPane.rowIndex="1"
+                   prefWidth="600.0"
+                   prefHeight="350.0">
+            <columns>
+
+                <TableColumn fx:id="name"
+                             prefWidth="300.0"
+                             text="Player name">
+
+                </TableColumn>
+                <TableColumn fx:id="grid"
+                             prefWidth="150.0"
+                             text="Grid">
+
+                </TableColumn>
+                <TableColumn fx:id="time"
+                             prefWidth="150.0"
+                             text="Time">
+                </TableColumn>
+            </columns>
+        </TableView>
+
+    </GridPane>
+
+</AnchorPane>

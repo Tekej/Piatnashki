@@ -1,0 +1,44 @@
+#BackGround {
+    -fx-background-image: url("/sample/image/background.jpg");
+}
+#GameTitle {
+    -fx-font-size: 40px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #ff9a00;
+    -fx-effect: innershadow( three-pass-box , rgba(255, 3, 0, 0.7), 6, 0.0 , 0 , 2 );
+}
+
+.button {
+    -fx-text-fill: #06ff00;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#0a6eff, #0093b1);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-size: 15px;
+
+}
+.button:disabled{
+    -fx-background-color: #06ff00;
+    -fx-opacity: 1;
+    -fx-text-fill:#000000;
+}
+#text {
+    -fx-font-size: 25px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #ff1200;
+    -fx-effect: innershadow( three-pass-box , rgba(6, 255, 0, 0.7), 6, 0.0 , 0 , 2 );
+}
+
+#text1 {
+    -fx-font-size: 25px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #fff706;
+    -fx-effect: innershadow( three-pass-box , rgb(255, 252, 3), 6, 0.0 , 0 , 2 );
+}
+
+#text2 {
+    -fx-font-size: 25px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #fffc03;
+    -fx-effect: innershadow( three-pass-box , rgb(255, 252, 3), 6, 0.0 , 0 , 2 );
+}
